@@ -160,8 +160,10 @@ textarea, input, select { font-family: inherit; }
 
 /* ---------- Progress ring ---------- */
 
-.ring { transform: rotate(-90deg); }
-.ring circle { fill: none; stroke-linecap: round; }
+/* Named progress-ring, not ring: Tailwind's own .ring utility (a box-shadow ring) would
+   collide with a bare .ring class and show as a square box-shadow behind the circle. */
+.progress-ring { transform: rotate(-90deg); }
+.progress-ring circle { fill: none; stroke-linecap: round; }
 .ring-track { stroke: var(--color-border); }
 .ring-fill {
   stroke: var(--color-brand);

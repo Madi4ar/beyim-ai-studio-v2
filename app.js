@@ -545,7 +545,7 @@ function viewGenerate(id) {
           <h2 class="text-[22px] font-semibold mb-6">${project.status === 'generating' ? 'Создаём ваш урок' : 'Урок готов'}</h2>
 
           <div class="relative w-[140px] h-[140px] mb-6">
-            <svg class="ring w-full h-full" viewBox="0 0 120 120">
+            <svg class="progress-ring w-full h-full" viewBox="0 0 120 120">
               <circle class="ring-track" cx="60" cy="60" r="${r}" stroke-width="8"/>
               <circle class="ring-fill" id="gen-ring-fill" cx="60" cy="60" r="${r}" stroke-width="8"
                 stroke-dasharray="${circumference}" stroke-dashoffset="${offset}"/>
