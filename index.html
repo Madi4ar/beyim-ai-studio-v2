@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beyim Studio: конструктор урока</title>
+<meta name="description" content="Beyim Studio: AI-платформа для педагогов, которая по теме урока собирает готовый комплект материалов на казахском и русском языках.">
+<!-- Precompiled, purged Tailwind build (tailwind.config.js + tailwind-input.css -> tailwind.css).
+     Replaces the Play CDN script, whose runtime MutationObserver recompiles CSS on every
+     DOM mutation and was the cause of the jank on dense routes like #/results/:id. -->
+<link rel="stylesheet" href="tailwind.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-bg text-ink font-sans antialiased">
+
+  <div class="app-shell">
+    <aside id="sidebar" class="sidebar" aria-label="Основная навигация"></aside>
+    <div id="view-root" class="view-root"></div>
+  </div>
+
+  <div id="toast-root" class="toast-root" aria-live="polite"></div>
+
+  <script src="data.js"></script>
+  <script src="icons.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
